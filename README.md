@@ -2,7 +2,7 @@
 
 This repository demonstrates a Simple Recommender System implemented in Python, focusing on a single approach: **Singular Value Decomposition (SVD)**.
 
-## Table of Contents
+### Table of Contents
 1. [Overview](#overview)
 2. [Features](#features)
 3. [Data](#data)
@@ -22,7 +22,7 @@ The goal of this project is to build and evaluate a recommendation system that l
 
 ---
 
-## Features
+### Features
 - **Loading and Preprocessing:** Handles reading CSV data for ratings and movies, maps IDs to consecutive indices, and performs train-test splits.
 - **SVD-based Prediction:** Evaluates user-item ratings with a specified low-rank approximation (default: k=20).
 - **Recommendation Generation:** Provides recommendations for a specific user while also listing the user’s watched items.
@@ -32,15 +32,20 @@ The goal of this project is to build and evaluate a recommendation system that l
 
 ---
 
-## Data
+### Data
 The datasets used here include:
-1. **movies.csv** and **ratings.csv** – Basic files containing movie metadata and user ratings.
-2. The data is filtered to manage large scales, limiting the top users and movies.
-
+1. **movies.csv** and **ratings.csv** – Basic files containing movie metadata and user ratings. This dataset can be found in https://grouplens.org/datasets/movielens/.
+2. The data is filtered to manage large scales, limiting the top users and movies. The filtering method implemented here is the selection of the top 20000 users and top 5000 movies, for time efficiency purposes.
 ---
 
-## Installation
+### Installation & How to Run
 1. Clone this repository or download the ZIP.
 2. Install the required Python packages:
-   ```bash
-   pip install -r requirements.txt
+   Pandas, Matplotlib, Seaborn, Numpy, Scikit-learn, Scipy.
+3. Run the main.py file using the current parameters implemented, or change the parameters before running to acquire a different result.
+
+### Contributors
+Developer: Haegen Quinston
+
+### License
+This repository is licensed under the rules of the MIT License.
